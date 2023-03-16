@@ -6,10 +6,10 @@ class containsDuplicateSolution {
         Set set = new HashSet<Integer>();
         for (int x : nums) {
             if (!set.add(x)) {
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 }
 
